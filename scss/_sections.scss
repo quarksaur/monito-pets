@@ -1,0 +1,29 @@
+@use "mixins";
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    &_header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &_text * {
+        margin: 0;
+        line-height: 2rem;
+    }
+
+    &_grid {
+        &-pets {
+            @include mixins.grid(4);
+        }
+
+        &-knowledge {
+            @include mixins.grid(3);
+        }
+    }
+}
