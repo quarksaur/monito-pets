@@ -1,5 +1,61 @@
 // CLI compile command from ROOT
 // sass scss/main.scss style.css --watch --style compressed
 
-@use 'variables';
-@use 'mixins';
+@use "variables";
+@use "mixins";
+@use "navbar";
+@use "header";
+
+* {
+    box-sizing: border-box;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    // position: relative;
+    height: 100dvh;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+.button {
+    &-primary {
+        @include mixins.button(variables.$white, variables.$blue);
+    }
+
+    &-secondary {
+        @include mixins.button(variables.$blue, transparent);
+        box-shadow: inset 0px 0px 0px 1.5px variables.$blue;
+    }
+}
+
+main {
+    padding: 5rem 10rem;
+    display: flex;
+    flex-direction: column;
+
+    .section {
+        &_header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
+
+

@@ -1,0 +1,39 @@
+@use 'variables';
+
+.header {
+    height: 100dvh;
+    padding-top: calc(80px + 2rem);
+    padding-left: 10rem;
+    display: flex;
+    background-color: variables.$beige;
+
+    &_left {
+        padding-top: 3rem;
+    }
+
+    &_title {
+        margin: 0;
+        font-size: 3rem;
+        color: variables.$blue;
+    }
+
+    &_subtitle {
+        margin: 0;
+        font-size: 2rem;
+        color: variables.$blue;
+    }
+
+    &_text {
+        margin: 3rem 0;
+        font-size: 13.5px;
+    }
+
+    &_links {
+        display: flex;
+        gap: 1rem;
+    }
+
+    &_image {
+        height: 100%;
+    }
+}

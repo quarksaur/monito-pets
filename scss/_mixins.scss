@@ -1,0 +1,19 @@
+@use "variables";
+
+@mixin button($color, $bg) {
+    height: fit-content;
+    width: fit-content;
+    padding: 0.6rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: $color;
+    background-color: $bg;
+    border-radius: 1000px;
+}
+
+@mixin grid($cols) {
+    display: grid;
+    grid-template-columns: $cols;
+    gap: 1rem;
+}

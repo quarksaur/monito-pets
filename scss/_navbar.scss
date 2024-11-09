@@ -1,0 +1,55 @@
+@use 'variables';
+@use 'mixins';
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    padding: 0 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: variables.$beige;
+
+    &_logo {
+        height: 40px;
+        width: fit-content;
+    }
+
+    &_links {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 5rem;
+        list-style-type: none;
+    }
+
+    &_link a {
+        font-weight: 600;
+        color: variables.$blue;
+    }
+
+    &_interact {
+        display: flex;
+        gap: 1rem;
+    }
+
+    &_search {
+        display: flex;
+        align-items: center;
+
+        &_input {
+            @include mixins.button(variables.$black, transparent);
+
+            padding-left: calc(39px + 1rem);
+            border: 0;
+            background: variables.$white url("../img/search.svg") 15px center no-repeat;
+        }
+    }
+
+    &_login {
+        padding: 0.5rem 5rem;
+    }
+}
