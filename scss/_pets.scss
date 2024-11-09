@@ -6,6 +6,10 @@ $border: 0.5rem;
 .pet {
     width: 100%;
     padding: $padding;
+    padding-bottom: calc(2*$padding);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
     border-radius: $border;
     box-shadow: 0px 0px 20px -1px hsl(0, 0%, 95%);
 
@@ -14,8 +18,22 @@ $border: 0.5rem;
         border-radius: calc($padding - $border);
     }
 
+    &_text {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        & * {
+            margin: 0;
+        }
+    }
+
     &_specs {
         display: flex;
         gap: 1rem;
+
+        & * {
+            color: variables.$grey;
+        }
     }
 }
