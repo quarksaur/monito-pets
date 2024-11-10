@@ -8,6 +8,7 @@
 @use "sections";
 @use 'pets';
 @use 'knowledge';
+@use 'footer';
 
 * {
     box-sizing: border-box;
@@ -84,5 +85,3 @@ main {
     flex-direction: column;
     gap: 3rem;
 }
-
-

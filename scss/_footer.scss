@@ -1,0 +1,107 @@
+@use "variables";
+
+.footer {
+    width: 100%;
+    padding: 5rem 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    background-color: variables.$beige;
+
+    &_newsletter {
+        padding: 2rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        background-color: variables.$blue;
+        border-radius: 1.5rem;
+    }
+
+    & .newsletter {
+        &_title {
+            margin: 0;
+            color: variables.$white;
+        }
+
+        &_form {
+            height: fit-content;
+            width: 100%;
+            padding: 1rem;
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+            gap: 1rem;
+            background-color: variables.$white;
+            border-radius: 1rem;
+        }
+
+        &_input {
+            width: 100%;
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+        }
+
+        &_submit {
+            padding: 0.5rem 1rem;
+            color: variables.$white;
+            background-color: variables.$blue;
+            border-radius: 0.5rem;
+            white-space: nowrap;
+        }
+    }
+
+    &_links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        & > * {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+            list-style: none;
+            font-size: 1.25rem;
+        }
+    }
+
+    &_social {
+        font-size: 1.5rem;
+    }
+
+    &_page *,
+    &_social * {
+        color: black;
+    }
+
+    & hr {
+        margin: 0;
+        height: 1px;
+    }
+
+    &_bottom {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &_logo {
+        height: 50px;
+    }
+
+    &_legals {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        list-style: none;
+    }
+
+    &_legal * {
+        color: variables.$black;
+    }
+}
