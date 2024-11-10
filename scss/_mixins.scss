@@ -1,12 +1,12 @@
 @use "variables";
 
-@mixin button($color, $bg, $padding: 2rem, $size: 1.25rem) {
-    // height: fit-content;
+@mixin pill($color, $bg, $paddingY: 1rem, $paddingX: 2.5rem, $size: 1.25rem) {
     width: fit-content;
-    padding: 0.6rem $padding;
+    padding: $paddingY $paddingX;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
     font-size: $size;
     font-weight: 400;
     color: $color;

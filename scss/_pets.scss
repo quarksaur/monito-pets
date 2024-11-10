@@ -21,6 +21,10 @@ $radius: 0.5rem;
         & * {
             margin: 0;
         }
+
+        & h4 {
+            color: variables.$black;
+        }
     }
 
     &_specs {

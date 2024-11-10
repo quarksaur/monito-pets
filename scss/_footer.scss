@@ -13,7 +13,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 1rem;
+        gap: 2rem;
         background-color: variables.$blue;
         border-radius: 1.5rem;
     }
@@ -21,6 +21,8 @@
     & .newsletter {
         &_title {
             margin: 0;
+            font-size: 1.5rem;
+            font-weight: 500;
             color: variables.$white;
         }
 
@@ -48,6 +50,7 @@
             background-color: variables.$blue;
             border-radius: 0.5rem;
             white-space: nowrap;
+            cursor: pointer;
         }
     }
 
@@ -68,7 +71,7 @@
     }
 
     &_social {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     &_page *,

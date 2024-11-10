@@ -34,6 +34,8 @@
 
     &_interact {
         display: flex;
+        flex-direction: row;
+        align-items: stretch;
         gap: 1rem;
     }
 
@@ -42,8 +44,9 @@
         align-items: center;
 
         &_input {
-            @include mixins.button(variables.$black, transparent);
+            @include mixins.pill(variables.$black, transparent);
 
+            height: 100%;
             width: 300px;
             padding-left: calc(39px + 1rem);
             font-size: 1rem;
@@ -53,7 +56,7 @@
     }
 
     &_login {
-        @include mixins.button(variables.$white, variables.$blue, 5rem);
+        @include mixins.pill(variables.$white, variables.$blue, $paddingX: 5rem);
 
     }
 }

@@ -18,6 +18,10 @@
         line-height: 2rem;
     }
 
+    &_text h4 {
+        font-weight: 400;
+    }
+
     &_grid {
         &-pets {
             @include mixins.grid(4);
@@ -41,8 +45,9 @@
             width: 50%;
         }
 
-        &_right {
+        &_text {
             width: 100%;
+            padding-top: 2rem;
             display: flex;
             flex-direction: column;
             gap: 3rem;
@@ -64,7 +69,7 @@
             color: variables.$blue;
         }
 
-        &_text {
+        &_paragraph {
             margin: 0;
             text-align: right;
         }

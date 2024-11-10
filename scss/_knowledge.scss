@@ -23,10 +23,14 @@ $radius: 0.5rem;
         & * {
             margin: 0;
         }
+
+        & h4 {
+            color: variables.$black;
+        }
     }
 
     &_tag {
-        @include mixins.button(variables.$white, variables.$seablue, 1rem, 1rem);
+        @include mixins.pill(variables.$white, variables.$seablue, 0.5rem, 1rem, 1rem);
     }
 
     &_specs {
