@@ -3,7 +3,7 @@
 $padding: 1rem;
 $border: 0.5rem;
 
-.pet {
+.knowledge {
     width: 100%;
     padding: $padding;
     display: flex;
@@ -14,6 +14,8 @@ $border: 0.5rem;
 
     &_image {
         width: 100%;
+        aspect-ratio: 21745/14543;
+        object-fit: cover;
         border-radius: calc($padding - $border);
     }
 

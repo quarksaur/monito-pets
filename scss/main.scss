@@ -7,6 +7,7 @@
 @use "header";
 @use "sections";
 @use 'pets';
+@use 'knowledge';
 
 * {
     box-sizing: border-box;
@@ -54,12 +55,12 @@ h3 {
 }
 
 h4 {
-    font-size: 1.25rem;
+    font-size: 1.18rem;
     font-weight: 500;
 }
 
 h5 {
-    font-size: 1.1rem;
+    font-size: 1.08rem;
 }
 
 p {
@@ -81,6 +82,7 @@ main {
     padding: 5rem 10rem;
     display: flex;
     flex-direction: column;
+    gap: 3rem;
 }
 
 
